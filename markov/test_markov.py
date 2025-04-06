@@ -6,7 +6,7 @@ class TestMarkovBabbler2(unittest.TestCase):
     def setUp(self):
         warnings.simplefilter("ignore")
         self.babbler = Babbler(2)
-        self.babbler.add_file('tests/test1.txt')
+        self.babbler.add_file("markov/tests/test1.txt")
 
     def test_starters(self):
         expected = ['a b', 'a b', 'a b', 'a b', 'x y', 'x y']
@@ -52,7 +52,7 @@ class TestMarkovBabbler3(unittest.TestCase):
     def setUp(self):
         warnings.simplefilter("ignore")
         self.babbler = Babbler(3)
-        self.babbler.add_file('tests/test1.txt')
+        self.babbler.add_file("markov/tests/test1.txt")
 
     def test_starters(self):
         expected = ['a b c', 'a b c', 'a b c', 'a b c', 'x y z', 'x y z']
